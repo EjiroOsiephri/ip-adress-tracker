@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+     integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
+     crossorigin=""/>
+
+     <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+     integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
+     crossorigin=""></script>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ip adress tracker</title>
+</head>
+<body>
+    <div class="main">
+        <img src="images/pattern-bg.png" class="img-pattern"  style="height: 300px;"  alt="">
+        <h1>IP Address Tracker</h1>
+
+        <input type="text" value=" " id="input-search" placeholder="Search for any IP address or domain" value="">
+         <p class="par">Invalid IP Address</p>
+         <p class="par1">This field is required</p>
+
+        <button id="btn"><img src="images/icon-arrow.svg" alt=""></button>
+
+        <div id="map">
+            <img id="compress-icon" src="images/icon-location.svg">
+        </div>
+        
+       <div class="address-container">
+        
+        <h3>IP Address <br> <span id="ip">192.212.174.101</span></h3>
+        <h3> <span id="location-country"></span></h3>
+        <div class="vl"></div>
+        <div class="loc">
+            <h3>LOCATION</h3>
+            <span id="location-region">Brooklyn , NY 10001</span>
+        </div>
+        <div class="time">
+            <h3>TIMEZONE:UTC  </h3>
+            <span id="timezone"></span>
+        </div>
+        <div class="vl"></div>
+        <div class="inter">
+            <h3>ISP </h3>
+            <span id="isp">SpaceX Starlink</span>
+        </div>
+
+        <h3> <span id="latitude"></span></h3>
+        <h3> <span id="longitude"></span></h3>
+
+
+       </div>
+</div>
+             
+
+
+<div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Ejiro Osiephri</a>.
+  </div>
+   
+
+
+    <script src="track.js"></script>
+</body>
+</html>
